@@ -2,23 +2,41 @@
 <html lang="en">
 
 <head>
-  <title>Catch me if you can</title>
+  <title>Madness generator</title>
+  <link rel="icon" type="image/png" href="favicon-16x16.png" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/df5ba7aba8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="catch-me">Don't get mad too fast</div>
+  <div class="congratz">Congratz my friend! You made it!</div>
 
-  <button></button>
-
-  <div class="aim1"></div>
+  <div class="moving-square"></div>
   <div class="target1 target"></div>
   <div class="target2 target"></div>
   <div class="target3 target"></div>
   <div class="target4 target"></div>
 
+  <div class="info">
+    <p class="p-tries">Tries:</p>
+    <div class="tries-count">0</div>
+    <p class="p-restart">Restart</p>
+    <div class="restart"><i class="fas fa-times"></i></div>
+    <p class="p-target">Target:</p>
+    <div class="target-value">0px</div>
+    <p class="p-last-attempt">Last attempt:<p>
+        <div class="last-attempt-score">0px</div>
+        <p class="start-animation">Play again/Clear</p>
+        <div class="begin-animation"><i class="fas fa-check"></i></div>
+        <p class="click-me">Click me brah!</p>
+        <button></button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
