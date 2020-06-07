@@ -1,2 +1,6 @@
-Hover game called ~ Catch me if you can
+# Madness generator
+
+Reflex and reaction game NOT for everyone
+
+> and remember "Don't get mad too fast"
 
