@@ -1,4 +1,4 @@
-# madness generator
+# madness-generator
 
 Reflex and reaction game NOT for everyone
 
