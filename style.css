@@ -54,7 +54,7 @@ body {
 }
 
 .catch-me::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ body {
 }
 
 .congratz.scale {
-  animation: scale .5s linear forwards;
+  animation: scale 0.5s linear forwards;
 }
 
 @keyframes scale {
@@ -281,7 +281,7 @@ button:hover {
 }
 
 button.shake {
-  animation: shake-it .4s linear;
+  animation: shake-it 0.4s linear;
 }
 
 button.hide {

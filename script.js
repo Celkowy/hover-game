@@ -9,21 +9,21 @@ const beginAnimation = document.querySelector('.begin-animation');
 var clickCounter = 0;
 
 movingSquare.classList.add('animation');
+targetValue.textContent = document.documentElement.clientWidth/2 + "px";
 
 beginAnimation.addEventListener('click', function(){
   clickCounter=0;
   triesCount.textContent = clickCounter;
-  targetValue.textContent = "0px";
+  targetValue.textContent = document.documentElement.clientWidth/2 + "px";
+  lastAttemptScore.style.color = "black"
   lastAttemptScore.textContent = "0px";
   movingSquare.classList.add('animation');
   movingSquare.classList.remove('pause');
   button.classList.remove('hide');
   congratz.classList.remove('scale');
+
   
   if(movingSquare.offsetLeft + 14 == document.documentElement.clientWidth/2){
-    triesCount.textContent = 0;
-    targetValue.textContent = "0px";
-    lastAttemptScore.textContent = "0px"
     movingSquare.classList.add('animation');
 }
 })
@@ -33,6 +33,11 @@ beginAnimation.addEventListener('click', function(){
     triesCount.textContent = clickCounter;
     targetValue.textContent = document.documentElement.clientWidth/2 + "px";
     lastAttemptScore.textContent = movingSquare.offsetLeft + 14 + "px";
+    if(movingSquare.offsetLeft + 14 != document.documentElement.clientWidth/2){
+      lastAttemptScore.style.color = "red"
+
+    } else lastAttemptScore.style.color = "#7FFF00"
+
     movingSquare.classList.add('animation');
     button.classList.toggle('shake');
     congratz.classList.remove('scale');
@@ -47,8 +52,9 @@ beginAnimation.addEventListener('click', function(){
 restart.addEventListener('click', function(){
     clickCounter = 0;
     triesCount.textContent = 0;
-    targetValue.textContent = "0px";
+    lastAttemptScore.style.color = "black"
     lastAttemptScore.textContent = "0px";
+    targetValue.textContent = document.documentElement.clientWidth/2 + "px";
     movingSquare.classList.remove('animation');
     button.classList.add('hide');
     congratz.classList.remove('scale');
